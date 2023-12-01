@@ -15,7 +15,14 @@ export interface gif {
   source_post_url: string;
   is_sticker: number;
   import_datetime: string;
-  images: object;
+  images: {
+    original: {
+      height: string;
+      width: string;
+      url: string;
+    };
+    fixed_height_small: object;
+  };
   user: object;
   analytics_response_payload: string;
   analytics: object;
